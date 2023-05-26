@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+
+Hola {{user}}.
+
+Has solicitado recuperacion de contraseña, sigue las instrucciones en la siguiente dirección URL:
+http://{{domain}}{% url 'resetpasswd_validate' uidb64=uid token=token %}
+
+
+
+{% endautoescape %}

@@ -1,0 +1,302 @@
+
+:root {
+    --hover-color: #00c4ff;
+    --main-color: #00acee;
+    --tex-color: #808080;
+    --tex-l-color: #c7c7c7;
+    --text-wth: #ffff;
+    --text-dk-color: #272727;
+    --light-border: #ebebeb;
+    --light-bg: #ffffff;
+    --light-10-bg: #f5f5f5;
+    --lg-tr-bg: #39779b3d;
+    --brd-input: #dadce0;
+    --dark-tr-bg: #0000007a;
+    --none-color: #ffffff00;
+
+
+    --lg-hov-bg: #f7f7f7;
+    --mlink-hov: #1f4c66;
+}
+
+/* Normalize CSS */
+*{
+    font-size: 16px;
+    font-family: 'Product Sans Regular', 'Roboto', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    list-style: None;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: gray;
+}
+
+.wrap {
+    width: 100% !important;
+    min-height: 100vh;
+    background: var(--light-bg);
+}
+/**/
+
+
+
+/*#### link-style(<a></a>) ####*/
+a {color: inherit;}
+.mclr {color: var(--main-color);}
+/**/
+/*############ backgournd ############*/
+.bg-wth {background: var(--light-bg);}
+.bg-mc {background-color: var(--main-color);}
+.bgNo {background: none;}
+.bgDkTr {background: var(--dark-tr-bg);}
+/**/
+/*############ FONT ################*/
+.f-fm-Rbt {font-family: Roboto !important;}
+.f-fm-gogs {font-family: Product Sans Regular;}
+.ffmgogslr {font-family: 'Product Sans Light Regular';}
+.f-fm-inh {font-family: inherit;}
+.f-sz10 {font-size: 10px;}
+.f-sz12 {font-size: 12px;}
+.f-sz14 {font-size: 14px;}
+.f-sz25 {font-size: 25px;}
+.f-sz-ih {font-size: inherit;}
+
+.f-wth-6c {font-weight: 600;}
+.f-wth-3c {font-weight: 300;}
+.f-w-inh {font-weight: inherit;}
+/**/
+/* color */
+.txt-dk {color: var(--text-dk-color);}
+.clr-lg {color: var(--text-wth);}
+/**/
+.txt-alc {text-align: center;}
+/**/
+/***** tex-transform *****/
+.txtTrCap {text-transform: capitalize;}
+/**/
+/* object-fit (images) */
+.obj-f-cnt {object-fit: contain;}
+.objFCv {object-fit: cover;}
+/**/
+/*padding*/
+.p-0 {padding: 0;}
+.p-4 {padding: 4px;}
+.p-10 {padding: 10px;}
+.p-0-5 {padding: 0 5px;}
+.p-0-10 {padding: 0 10px;}
+.p-5-10 {padding: 5px 10px;}
+.p-10-0 {padding: 10px 0;}
+.p10x8x {padding: 10% 8%;}
+.p10x3x {padding: 10% 3%;}
+.p-20-0 {padding: 20px 0;}
+.p-15-10 {padding: 15px 10px;}
+.p-0-20 {padding: 0 20px;}
+.p-5-20 {padding: 5px 20px;}
+.p-0-15 {padding: 0 15px;}
+.p-0-30 {padding: 0 30px;}
+.p-5-15 {padding: 5px 15px;}
+.p-t20 {padding-top: 20px;}
+.p-t30 {padding-top: 30px;}
+.p-t50 {padding-top: 50px;}
+.p-t10 {padding-top: 10px;}
+.p-t0 {padding-top: 0;}
+.p-t7 {padding-top: 7px;}
+.p-b20 {padding-bottom: 20px;}
+.p-b10 {padding-bottom: 10px;}
+.p-r5 {padding-right: 5px;}
+/**/
+/*#### margin #########*/
+.m-auto {margin: auto;}
+.m-t2 {margin-top: 2px;}
+.m-10-a {margin: 10px auto;}
+.m-0 {margin: 0;}
+/**/
+/*####### cursor acction ########*/
+.crsr-cm {cursor: context-menu;}
+.crsr-pt {cursor: pointer;}
+/**/
+/*######## position #########*/
+.pstn-a {position: absolute;}
+.pstn-r {position: relative;}
+.pstn-f {position: fixed;}
+
+    /***** ******/
+    .top-0 {top: 0;}
+    .top-48 {top: 48px;}
+    .bott-0 {bottom: 0;}
+    .rght-0 {right: 0;}
+    .left-0 {left: 0;}
+    .fxd-t48-00 {top: 48px; left: 0; right: 0;}
+    .fxd-t48_000 {top: 48px; left: 0; right: 0; bottom: 0;}
+    .fxd-0 {top: 0; left: 0; right: 0; bottom: 0;}
+/**/
+/*###### LINE-HEIGHT ####*/
+.lht-2 {line-height: 2;}
+.lht-1M {line-height: 1.5;}
+/**/
+/*####### width ######*/
+.w-0 {width: 0 !important;}
+.wAu {width: auto;}
+.w-270 {width: 270px;}
+.w-360 {width: 360px;}
+.w-x100 {width: 100%;}
+    .mxw-1300 {max-width: 1300px;}
+    .mxw-750 {max-width: 750px;}
+    .mxw-400 {max-width: 400px;}
+    .mxw-360 {max-width: 360px;}
+    .mxw-450 {max-width: 450px;}
+    .mxw-x100 {max-width: 100%;}
+    .mxw-1xvw {max-width: 100vw;}
+    .mxw-x1-10 {max-width: calc(100vw - 10px);}
+    .mxw-x1-30 {max-width: calc(100vw - 30px);}
+/**/
+/*#### height ####*/
+.h-0 {height: 0 !important;}
+.h32 {height: 32px;}
+.H35 {height: 35px;}
+.h48 {height: 48px;}
+.h-x100 {height: 100%;}
+.h-200 {height: 200px;}
+.h100vh {height: 100vh;}
+.h-100vh-48 {height: calc(100vh - 48px);}
+    .mih-1x {min-height: 100%;}
+    .mxh-1xvh {max-height: 100vh;}
+    .mih-1xvh {min-height: 100vh;}
+    .mxh-1xvh-48 {max-height: calc(100vh - 48px);}
+    .MxH1xvh-80 {max-height: calc(100vh - 80px);}
+/**/
+/*################# overflow ############*/
+.o-f-y-a {overflow-y: auto;}
+.OFYA {overflow-y: auto;}
+.ovFlH {overflow: hidden;}
+/**/
+/*####### border ######*/
+.bdr-t-s1 {border-top: solid 1px;}
+.bdr-b-s1 {border-bottom: solid 1px;}
+.bdr-s-1 {border: solid 1px;}
+.brd-mClr_hover {border: solid 1px var(--none-color);}
+.brd-s1-noclr {border: solid 1px var(--none-color);}
+/**/
+.brd-no-clr {border-color: var(--none-color);}
+.brd-m-clr {border-color: var(--main-color);}
+.brd-lg-c {border-color: var(--light-border);}
+.brdTr10 {border-color: var(--lg-tr-bg);}
+/*####### border-radius ##########*/
+.b-rd-x50 {border-radius: 50%;}
+.brdR100 {border-radius: 100px;}
+.b-rd-25 {border-radius: 25px;}
+.b-rd-5 {border-radius: 5px;}
+.brdT10 {border-radius: 10px 10px 0 0;}
+.brdT5 {border-radius: 5px 5px 0 0;}
+/**/
+/*######## display ########*/
+.d-no {display: none;}
+.d-fl {display: flex;}
+.d-fx {display: fixed;}
+.d-bl {display: block;}
+.d-i-fl {display: inline-flex;}
+.d-i-bl {display: inline-block;}
+.d-gr {display: grid;}
+/**/
+/*####### grid relations ##########*/
+        /* grid-auto-flow */
+.g0afl0d {grid-auto-flow: dense;}
+        /* grid-template-columns */
+.gtc-a1f {grid-template-columns: auto 1fr;}
+.gtc-afa {grid-template-columns: auto 1fr auto;}
+.gtrAFA {grid-template-rows: auto 1fr auto;}
+.gtcaft18 {grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));} /* this is special declaration */
+.gTCAfM10F {grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));}
+.gTCAfM8F {grid-template-columns: repeat(auto-fit, minmax(8rem,1fr));}
+        /* grid-template-rows */
+.gtr-1fa {grid-template-rows: 1fr auto;}
+.grdAuRwA {grid-auto-rows: auto;}
+/**/
+/* ************** box-shadow ****************/
+.bx-sdw-0230g {box-shadow: 0 2px 3px 0 var(--dark-tr-bg);}
+/**/
+/*########## flex-property's #################*/
+        /*flex-wrap*/
+        .fl-w-nwr {flex-wrap: nowrap;}
+        .fl-w-wr {flex-wrap: wrap;}
+        /*flex-direction*/
+        .fl-col {flex-direction: column;}
+        .fl-rw {flex-direction: row;}
+/*####### justify ########*/
+.jstf-it-cntr {justify-items: center;}
+.jstf-c-spbtw {justify-content: space-between;}
+.jstf-c-flend {justify-content: flex-end;}
+.jstf-c-cntr {justify-content: center;}
+.jstCnSB {justify-content: space-between;}
+.jstCnC {justify-content: center;}
+/**/
+/******* align ************/
+.alg-it-cntr {align-items: center;}
+.algItC {align-items: center;}
+/**/
+/*############# gap #########*/
+.gap-5 {gap: 5px;}
+.gap-10 {gap: 10px;}
+.gap-05r {gap: 0.5rem;}
+.rwGp20 {row-gap: 20px;}
+/**/
+/*###### transition #########*/
+.trst-03 {transition: all 0.3s;}
+.trS06 {transition: all 0.6s;}
+.trsT06 {transition: all 0.6s;}
+.trsT05 {transition: all 0.5s;}
+/**/
+/******** zomm **********/
+.zoom-08 {zoom: .8;}
+.zm85 {zoom: .85;}
+.zoom-09 {zoom: .9;}
+/**/
+/*######### z-index ###########*/
+.z-i-ms1 {z-index: +1;}
+/**/
+
+
+
+/*################## single components hovers ####################*/
+.liHov1:hover {background-color: var(--lg-hov-bg); color: var(--mlink-hov); transition: all 0.6s;}
+
+/**/
+/************** Humburger btns and hovers *****************/
+.btnHum1, .vctBTN {
+    background-color: var(--light-bg);
+    border: solid 1px var(--light-bg);
+    padding: 8px 0;
+    width: 44px;
+    height: 44px;
+}
+svg.btn {fill: var(--tex-color);}
+
+.btnHum1:hover svg, .vctBTN:hover svg {fill: var(--main-color);} /*btn and svg fill color*/
+
+.btnHum1:hover, .vctBTN:hover {background-color: var(--lg-hov-bg);}
+
+/* main btn */
+.btnMn1{
+    border: solid 1px var(--hover-color);
+    background: var(--main-color);
+    padding: 8px 25px;
+    color: var(--text-wth);
+}
+.btnMn1:hover {background: var(--hover-color); transition: .5s;}
+/******* end btns *******/
+
+/*********** SUAQUARE'S ***********/
+.sqr35 {width: 35px; height: 35px;}
+/**********************************/
+
+/********** BORDER HOVER *************/
+.BCHLTR:hover {border-color: var(--lg-tr-bg);}
+/*************************************/
+
+/* WHITE-SPACE, TEX-OVERFLOW OVERFLOW */
+    /******** NO SALT LINE ************/
+.TxtNSltL {white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+/**************************************/

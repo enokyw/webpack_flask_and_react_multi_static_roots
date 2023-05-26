@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+
+{% block customCSS %}
+
+{% endblock %}
+
+
+{% block main %}
+
+<div class="m_container d-gr h-100vh-48 gtr-1fa">
+
+    <div class="main_wrapper o-f-y-a p-0-20" id="mWppr">
+        {% block main_wrapper %}
+            {% include '__dashboard/sunat/sunat_docs.html'   %}
+        {% endblock %}
+    </div>
+
+    {% block footer %}
+        {% include '__includes/dashboard_footer.html' ignore missing %}
+    {% endblock %}
+</div>
+
+{% endblock %}
+
+
+{% block customJS %}
+
+{% endblock %}

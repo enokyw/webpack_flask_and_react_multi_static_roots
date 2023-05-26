@@ -1,0 +1,90 @@
+{% extends 'website/website.html' %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main_wrapper %}
+    <div class="m-wrapper d-fl jstf-c-cntr">
+        <div class="js-width mxw-1300 w-x100 pstn-r p-0-20">
+
+            <div class="sm-form d-fl mxw-360 h-x100 alg-it-cntr m-auto">
+                <div class="sm-f-w w-x100 p10x3x">
+                    <div class="fhe d-fl fl-col gap-10 alg-it-cntr txt-alc p-b10">
+                        <div class="fhimg h48">
+                            <img src="{{ url_for('assets', filename='images/account.png') }}" alt="" class="hImg h-x100 wAu">
+                        </div>
+                        <div class="fhttl"><span class="f-sz25 txt-alc txt-dk">Crea tu cuenta de For-X</span></div>
+                    </div>
+                    <form action="" method="POST">
+                        <input type="hidden" name="csrf_token" value="{{csrf_token}}">
+                        <div class="form_row p-10-0 d-gr grdAuRwA gTCAfM10F gap-10 rwGp20 zoom-09">
+                            <label class="input-content">
+                                <input type="text" class="form__input" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Nombre</span>
+                            </label>
+                            <label class="input-content">
+                                <input type="text" class="form__input" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Apellido</span>
+                            </label>
+                        </div>
+
+                        <div class="form_row p-10-0 zoom-09">
+                            <label class="input-content">
+                                <input type="email" class="form__input" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Correo Electrónico</span>
+                            </label>
+                        </div>
+
+                        <div class="form_row p-10-0 d-gr grdAuRwA gTCAfM8F gap-10 rwGp20 zoom-09">
+                            <label class="input-content">
+                                <input type="email" class="form__input" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Nro. de RUC</span>
+                            </label>
+                            <label class="input-content">
+                                <input type="text" class="form__input" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Nro. de Celular</span>
+                            </label>
+                        </div>
+
+                        <div class="mrinf">
+                            <span class="d-i-bl p-t0 p-20-0 ffmgogslr f-sz12">El número de RUC empieza con 10 o 20, cuya longitud debe ser de 11 digitos
+                                <a class="mlnk f-sz14 mclr mlkhov" href="#">¿No tienes un número RUC?</a>
+                            </span>
+                        </div>
+
+                        <div class="form_row p-10-0 d-gr grdAuRwA gTCAfM10F gap-10 rwGp20 zoom-09">
+                            <label class="input-content">
+                                <input type="password" class="form__input SHPsswdR" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Contraseña</span>
+                            </label>
+                            <label class="input-content">
+                                <input type="password" class="form__input SHPsswdR" spellcheck="false" autocomplete="off">
+                                <span class="label__input">Confirmación</span>
+                            </label>
+                        </div>
+
+                    </form>
+                    <div class="fmop">
+                        
+                        <div class="mrinf">
+                            <span class="d-i-bl ffmgogslr f-sz12">
+                                Usa 8 o más caracteres con una combinación de letras, números y símbolos
+                            </span>
+                            <div class="check p-b20">
+                                <div class="checkbox d-fl algItC gap-10 p-10-0">
+                                    <input type="checkbox" id="SHWPssw" class="SHPSSW sqre20" jsClick="CheckUAct" data-for_elem="SHPsswdR">
+                                    <label class="f-sz14 txt-dk" for="SHWPssw">Mostrar contraseña</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="optbtns d-fl fl-rw algItC jstCnSB p-10-0">
+                            <a class="mlnk f-sz14 mclr mlkhov" href="{{ url_for('accounts.login') }}">Ya tengo cuenta</a>
+                            <input class="mnBtSq f-sz14 p-5-15" type="submit" value="Siguiente">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

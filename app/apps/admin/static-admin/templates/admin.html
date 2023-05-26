@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% block title %} Admin {% endblock %}</title><style>.load_c {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            z-index: 1;
+            transition: all 1s;
+        }
+        .loader {
+            position: relative;
+            display: flex;
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .loader:before, .loader:after {
+            content: '';
+            border-radius: 50%;
+            position: absolute;
+            inset: 0;
+            box-shadow: 0 0 10px 2px #00acee12 inset;
+        }
+        .loader:after {
+            box-shadow: 0 2px 0 #00acee inset;
+            animation: rotate 1s linear infinite;
+        }
+        @keyframes rotate {
+            0% {transform: rotate(0)}
+            100% {transform: rotate(360deg)}
+        }</style><script>window.addEventListener('load', () => {
+            const loader = document.getElementById('load');
+            loader.style.opacity = 0;
+            loader.style.visibility = 'hidden';
+        });</script>{% if not "/login" in request.path and not "/forgotaccount" in request.path %}<script defer="defer" src="{{ url_for('admin-369-nkts.static', filename='js/app.cdd026b3c9ea19fcb109.js') }}"></script>{% endif %}<link rel="stylesheet" href="{{ url_for('assets', filename='fonts/style.css') }}"><link rel="stylesheet" href="{{ url_for('assets', filename='css/app.css') }}"><link rel="stylesheet" href="{{ url_for('admin-369-nkts.static', filename='css/admin.css') }}"></head><body><div id="load" class="load_c"><span class="loader"><img src="{{ url_for('assets', filename='images/logo.png') }}" alt="logo"></span></div><div class="adWraper d-gr gtrAFA h100vh">{% block header %} {% include 'includes/header.html' %} {% endblock %}<div class="mCont d-gr pstn-r gtc-a1f">{% block l_sidebar %} {% include 'includes/left_sidebar.html' %} {% endblock %} {% block main %} {% endblock %}</div><footer class="d-fl gap-10 jstf-c-cntr h32 p-10-0"><span class="f-sz10">LIBAY COMPANY © 2023</span> <a class="f-sz10" href="#">PRIVACIDAD</a> <a class="f-sz10" href="#">SEGURIDAD</a></footer></div><script defer="defer" src="{{ url_for('admin-369-nkts.static', filename='_js/admin.js') }}"></script></body></html>

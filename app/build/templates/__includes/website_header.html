@@ -1,0 +1,75 @@
+<div class="menu-horizontal">
+    <div class="h-wrapper d-fl jstf-c-cntr h-x100">
+        <div class="d-gr gtc-afa alg-it-cntr gap-10 w-x100 mxw-1300 pstn-r p-0-20 js-width">
+            <div class="l-h-c">
+                <button id="hamburger-w" class="hamburger">
+                    <span class="line1 h-line"></span>
+                    <span class="line2 h-line"></span>
+                    <span class="line3 h-line"></span>
+                </button>
+            </div>
+            <div class="c-h-c">
+                <span class="img_container d-fl jstf-it-cntr" id="i-brand">
+                    <i class="img d-i-fl p-0-5">
+                        <a href="{{ url_for('home') }}" class="branch">
+                            <img src="{{ url_for('assets', filename='images/logo.png') }}" alt="" class="logo">
+                            <span class="text f-fm-s-ui">For-X</span>
+                        </a>
+                    </i>
+                </span>
+            </div>
+            <div class="r-h-c d-fl gap-10 fl-rw fl-w-nwr">
+                <div class="d-fl gap-10 fl-rw fl-w-nwr" id="mHiddeL">
+                    <span class="bntL">
+                        <a class="f-sz14 bdr-s-1 b-rd-25 p-5-15 brd-m-clr ac_hov" href="{{ url_for('accounts.login') }}">Iniciar sesión</a>
+                    </span>
+                    <span class="bntL">
+                        <a class="f-sz14 clr-lg bdr-s-1 b-rd-25 p-5-15 brd-no-clr bg-mc abg_hov" href="{{ url_for('accounts.register') }}">Registrarme</a>
+                    </span>
+                </div>
+                <span class="d-no" id="btOff" onclick="click_actions()">
+                    <div class="d-fl">
+                        <i class="d-fl alg-it-cntr b-rd-x50 brd-s1-noclr bg-lgtr-hov">
+                            <i class="square-35 p-4">
+                                <svg class="mono" width="100%" height="100%" viewBox="0 0 18 18" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <path d="M9 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 5a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill-rule="evenodd"></path>
+                                </svg>
+                            </i>
+                        </i>
+                    </div>
+                    <!--  -->
+                    <span class="mdl-container w-0 h-0 bott-0 d-no x-closs" id="usrCtl">
+                        <div class="pstn-a d-fl fxd-t48-00 jstf-c-flend p-0-15 z-i-ms1">
+                            <section class="d-fl pstn-a top-0 b-rd-5 bx-sdw-0230g bg-wth mxw-x1-30 mxh-1xvh-48 o-f-y-a">
+                                <div class="d-fl fl-col f-fm-gogs f-wth-6c gap-5 w-x100 p-t10">
+                                    
+                                    <span class="d-fl p-0-20 hov-act">
+                                        <a class="d-fl fl-rw gap-10 f-fm-gogs m-auto f-sz14 alg-it-cntr p-5-15" href="{{ url_for('accounts.login') }}">
+                                            <span class="f-fm-gogs f-sz-ih f-w-inh">Iniciar sesión</span>
+                                        </a>
+                                    </span>
+                                    <span class="d-fl p-0-20 hov-act">
+                                        <a class="d-fl fl-rw gap-10 f-sz14 alg-it-cntr p-5-15" href="{{ url_for('accounts.register') }}">
+                                            <svg width="20" height="20"
+                                                viewBox="0 0 24 24" focusable="false" 
+                                                class=" NMm5M hhikbc mono">
+                                                <path d="M9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 7c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4zm6 5H3v-.99C3.2 16.29 6.3 15 9 15s5.8 1.29 6 2v1zm3-4v-3h-3V9h3V6h2v3h3v2h-3v3h-2z"></path>
+                                            </svg>
+                                             <span class="f-fm-gogs f-sz-ih f-w-inh">Registrar Cuenta</span>
+                                        </a>
+                                    </span>
+                                    <span class="d-fl fl-rw gap-10 txt-alc f-wth-3c p-15-10 bdr-t-s1 brd-lg-c">
+                                        <a class="f-fm-gogs f-sz12" href="#">Política de Privacidad</a>
+                                        <a class="f-fm-gogs f-sz12" href="#">Condiciones del Servicio</a>
+                                    </span>
+
+                                </div>
+                            </section>
+                        </div>
+                    </span>
+                    <!--  -->
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,307 @@
+/* companents css */
+
+/*############ top menu*/
+.menu-horizontal {
+    display: block;
+    width: 100%;
+    height: 48px;
+    background: var(--light-bg);
+    border-bottom: solid var(--light-border) 1px;
+}
+.menu-horizontal .top_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.left_menu_btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transition: 0.3s;
+}
+.left_menu_btn .icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.img .branch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+.branch .logo{
+    width: 30px;
+}
+.branch .text {
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+        /* user avatar top */
+
+.top_items .usr_avtr {
+    width: 35px;
+    height: 35px;
+}
+/**/
+/*#### sidebar vertical menu ####################*/
+.menu-vertical {
+    width: 280px;
+    min-height: calc(100vh - 48px);
+    background: var(--dark-tr-bg);
+}
+.menu_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 280px;
+    min-height: inherit;
+    background-color: var(--light-bg);
+}
+.menu_items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    margin: 0;
+}
+.item_content .item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+.item .i-cons {
+    font-size: 20px;
+    padding: 0 10px;
+}
+.i-cons .rotate {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+.item .item-element {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* sub-menu*/
+.item_content .sub-item {
+    display: none;
+}
+.item_content .show {
+    display: block;
+}
+.sub-item .s-item-content {
+    display: flex;
+    flex-direction: column;
+}
+.s-item-content .s-item {
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 2;
+    padding-left: 48px;
+    transition: .3s;
+}
+/**/
+
+/*##### square components #########*/
+.square-35 {
+    width: 35px;
+    height: 35px;
+}
+.sqre20 {width: 20px; height: 20px;}
+
+/**/
+/*   ########### svg mono-color ############  */
+svg.mono path {fill: var(--tex-color);}
+/**/
+
+/*############# COMPONENT INDICATOR and after ###############*/
+._dwn:after {
+    content: '⤵';
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0 10px;
+}
+._up:after {
+    content: '⤴';
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0 10px;
+}
+._m-actv:after {
+    content: '❉';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 10px 0 10px;
+    transition: .3s;
+}
+/**/
+/*####### component HOVER #########*/
+.hover:hover {
+    color: var(--hover-color);
+    background: linear-gradient(90deg, transparent, transparent,#08080803, #00000014);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.m-hover:hover {
+    color: var(--hover-color);
+    border: 1px solid;
+    border-radius: 25px;
+    transition: .3s;
+}
+.left_menu_btn:hover {
+    background-color: var(--lg-tr-bg);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+    /* ********* hover border *********/
+    .brd-mClr_hover:hover {border-color: var(--main-color);}
+    /* ******** hover background ********/
+    .bg-lgtr-hov:hover {background: var(--lg-tr-bg);}
+/**/
+/*#### ACTIVE  ######*/
+.active {
+    color: var(--hover-color);
+    background: linear-gradient(90deg, transparent, transparent,#08080803, #00000014);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.m-active {
+    color: var(--hover-color);
+    transition: .3s;
+}
+/**/
+
+/*##################################################################*/
+
+/*########### components #############*/
+.l1n3 {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--light-border);
+}
+.spacer {margin: 10px 0;}
+/**/
+
+
+
+/* btn hamburger */
+button.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    padding: 13px 11px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+}
+.hamburger .h-line  {
+    width: 17px;
+    height: 2px;
+    background: var(--tex-color);
+    border-radius: 1px;
+}
+button.hamburger:hover .h-line {
+    background-color: var(--main-color);
+}
+/**/
+
+/* main button/input=type[hidden] stile BTN */
+.mnBtSq {
+    color: var(--text-wth);
+    border: 5px 15px var(--main-color);
+    border-radius: 4px;
+    background: var(--main-color);
+}
+.mnBtSq:hover {background: var(--hover-color);}/* main button/input=type->hidden hover stile */
+/**/
+.mlkhov:hover {color: var(--hover-color);} /* MAIN LINK HOVER ACTION */
+/* hover actions*/
+.hov-act:hover, .hov-act:hover a {
+    background: var(--light-10-bg);
+    color: var(--main-color);
+}
+
+.abg_hov:hover {background: var(--hover-color);}
+.ac_hov:hover {color: var(--main-color);} /* hover <a> text color main-color */
+.hov-act:hover .hhikbc path, .hhikbc:hover path {fill: var(--main-color);} /* ## svg hover style */
+/**/
+/* main slide responsive grid repeat auto-fit minmax */
+.main-slide {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+/**/
+
+/* ################## input style */
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-content .form__input {
+    line-height: 1;
+    padding: 20px 6px 4px 6px;
+    font-size: 16px;
+    border: solid 1px var(--brd-input);
+    border-radius: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.input-content .label__input {
+    position: absolute;
+    left: 10px;
+    right: 6px;
+    top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: .3s;
+}
+.input-content .on-action {
+    top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: .3s;
+}
+.form__input:focus {
+    border-color: var(--main-color);
+    transition: .3s;
+}
+.form__input:focus~.label__input {
+    color: var(--main-color);
+    transition: .3s;
+}
+.bor_warn {
+    border-color: rgb(255, 90, 14) !important;;
+}
+.warning {color: rgb(255, 90, 14) !important;}
+.success {color: rgb(53, 175, 29) !important;}

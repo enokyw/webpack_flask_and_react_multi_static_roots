@@ -1,0 +1,47 @@
+{% extends 'admin.html' %}
+
+{% block title %}
+    Forgot password
+{% endblock %}
+
+
+{% block header %}
+    <div></div>
+{% endblock %}
+
+
+{% block main %}
+<div class="m-wrapper d-fl jstf-c-cntr h-x100">
+    <div class="js-width mxw-1300 w-x100 pstn-r p-0-20">
+
+        <div class="sm-form d-fl mxw-360 h-x100 alg-it-cntr m-auto">
+            <div class="sm-f-w w-x100 p10x8x">
+                <div class="fhe d-fl fl-col gap-10 alg-it-cntr txt-alc p-b10">
+                    <div class="fhimg h48">
+                        <img src="{{ url_for('assets', filename='images/account.png') }}" alt="" class="hImg h-x100 wAu">
+                    </div>
+                    <div class="fhttl"><span class="f-sz25 txt-alc txt-dk">Buscar tu correo electrónico</span></div>
+                    <div class="fhdtl"><span>Ingresa tu correo para verificar si eres usuario, de ser así recibirá instrucciones para recuperar su cuenta</span></div>
+                </div>
+                <form action="" method="POST">
+                    <input type="hidden" name="csrf_token" value="{{csrf_token}}">
+                    <div class="form_row p-10-0 zm85">
+                        <label class="input-content">
+                            <input type="email" class="form__input" spellcheck="false" autocomplete="off">
+                            <span class="label__input">Correo Electronico</span>
+                        </label>
+                    </div>
+
+                </form>
+                <div class="fmop">
+                    <div class="optbtns d-fl fl-rw algItC jstCnSB p-10-0">
+                        <a class="mlnk f-sz14 mclr mlkhov" href="{{ url_for('admin-369-nkts.login') }}">Iniciar sesión</a>
+                        <input class="mnBtSq f-sz14 p-5-15" type="submit" value="Siguiente">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

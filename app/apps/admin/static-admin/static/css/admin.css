@@ -1,0 +1,72 @@
+/* ################## input style */
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-content .form__input {
+    line-height: 1;
+    padding: 20px 6px 4px 6px;
+    font-size: 16px;
+    border: solid 1px var(--brd-input);
+    border-radius: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.input-content .label__input {
+    position: absolute;
+    left: 10px;
+    right: 6px;
+    top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: .3s;
+}
+.input-content .on-action {
+    top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: .3s;
+}
+.form__input:focus {
+    border-color: var(--main-color);
+    transition: .3s;
+}
+.form__input:focus~.label__input {
+    color: var(--main-color);
+    transition: .3s;
+}
+.bor_warn {
+    border-color: rgb(255, 90, 14) !important;;
+}
+.warning {color: rgb(255, 90, 14) !important;}
+.success {color: rgb(53, 175, 29) !important;}
+
+
+/* main button/input=type[hidden] stile BTN */
+.mnBtSq {
+    color: var(--text-wth);
+    border: 5px 15px var(--main-color);
+    border-radius: 4px;
+    background: var(--main-color);
+}
+.mnBtSq:hover {background: var(--hover-color);}/* main button/input=type->hidden hover stile */
+/**/
+.mlkhov:hover {color: var(--hover-color);} /* MAIN LINK HOVER ACTION */
+/* hover actions*/
+.hov-act:hover, .hov-act:hover a {
+    background: var(--light-10-bg);
+    color: var(--main-color);
+}
+
+.abg_hov:hover {background: var(--hover-color);}
+.ac_hov:hover {color: var(--main-color);} /* hover <a> text color main-color */
+.hov-act:hover .hhikbc path, .hhikbc:hover path {fill: var(--main-color);} /* ## svg hover style */
+/**/

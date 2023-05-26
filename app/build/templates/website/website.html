@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Blue Web
+{% endblock %}
+
+{% block header %}
+    {% include '__includes/website_header.html'   %}
+{% endblock %}
+
+{% block leftNavegation %}
+    
+{% endblock %}
+
+{% block main %}
+    {% block main_wrapper %}
+        {% include 'website/main/main.html'   %}
+    {% endblock %}
+
+    {% block footer %}
+        {% include '__includes/website_footer.html'   %}
+    {% endblock %}
+{% endblock %}
+
+{% block web_or_dsh_JS %}
+    <script type="text/javascript" src="{{ url_for('assets', filename='js/w-site.js') }}"></script>
+    <script>
+        responsive();
+    </script>
+    <script>
+        let mwppr = document.getElementById('msiteWR');
+        mwppr.className = "main d-gr gtr-1fa h-100vh-48 o-f-y-a";
+    </script>
+{% endblock %}
